@@ -1,0 +1,7 @@
+.global-style {
+    background-color: #F2E7DC;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    overflow: auto;
+    max-width: 100%;
+}
