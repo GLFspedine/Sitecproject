@@ -1,5 +1,14 @@
+:root{
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --background-color2: #EDEDDD;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
+
 .global-style {
-    background-color: #F2E7DC;
+    background-color: var(--background-color2);
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     overflow: auto;

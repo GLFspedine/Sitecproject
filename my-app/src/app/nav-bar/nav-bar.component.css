@@ -1,12 +1,20 @@
+:root{
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
+
 .divider{
-    background-color: #F2E7DC;
+    background-color: var(--background-color);
     height: 3rem;
     width: 0.2rem;
     margin-top: 13.8rem;
   }
-  
+
   .tabs-div {
-    background-color: #4f8b2e;
+    background-color: var(--secondary-color);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -18,16 +26,15 @@
     margin-top: -15rem;
     padding: 0.2rem;
   }
-  
+
   .tabs-text{
-    color: #F2E7DC;
+    color: var(--background-color);
     font-size: 1.4rem;
     margin-top: 13.8rem;
     padding: 1rem;
   }
-  
+
   a{
     text-decoration: none;
-    color: #F2E7DC
+    color: var(--background-color)
   }
-  

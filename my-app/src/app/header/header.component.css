@@ -1,25 +1,25 @@
 :root{
-    --primary-color: #186B8C;
-    --secondary-color: #4f8b2e;
-    --background-color: #F2E7DC;
+    --primary-color: #006AA3;
+    --secondary-color: #93CC99;
+    --background-color: #FFFFFF;
     --black: #000000;
     --project-font-family: 'Montserrat', sans-serif;
   }
-  
+
   /* #header-div define as propriedades do header */
 
   #header-div {
-    background-color: #186B8C;
+    background-color: var(--primary-color);
     height: 7rem;
     border-radius: 0 0 2.5rem 2.5rem;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 5px 5px 0px var(--black);
     position: relative;
     z-index: 5;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   /* #main-logo define o tamanho do logo */
 
   #main-logo{
@@ -28,7 +28,7 @@
   }
 
   /* #sitec-div define o espacamento entre o logo e a frase "SITEC" */
-  
+
   #sitec-div{
     display: flex;
     flex-direction: column;
@@ -39,10 +39,10 @@
   }
 
   /* #sitec-tag-header define parametros para a frase " SITEC " */
-  
+
   #sitec-header{
-    font-size: 44px;
-    color: #F2E7DC;
+    font-size: 2.5rem;
+    color: var(--background-color);
     margin-top: -0.2rem;
     font-weight: 900;
   }
@@ -50,42 +50,44 @@
   /* #sitec-tag-header define parametros para a frase " O futuro é agora!" */
 
   #sitec-tag-header{
-    color: #F2E7DC;
-    font-size: 20px;
+    color: var(--background-color);
+    font-size: 1.5rem;
     margin-top: -2rem;
   }
-  
+
+  /* #sitec-tag-header define parametros dos botoes do header */
+
   #buttons-header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-size-adjust: auto;
   }
-  
-  
+
+
   .button-header{
     height: 1.4rem;
-    background-color: #F2E7DC;
+    background-color: var(--background-color);
     width: 7rem;
-    color: black;
-    margin-right: 3rem;
+    color: var(--black);
+    margin-right: 5rem;
     border-radius: 2rem;
     text-align: center;
     font-size: 0.8rem;
     cursor: pointer;
     text-decoration: none;
-  } 
+  }
 
   #sobre-nos{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  
+
   }
-  
+
   #search-div{
     width: 14.5rem;
-    background-color: #F2E7DC;
+    background-color: var(--background-color);
     height: 1.5rem;
     margin-top: 1rem;
     display: flex;
@@ -93,13 +95,13 @@
     padding: 0.2rem;
     border-radius: 2rem;
   }
-  
+
 .user-icon {
   background-image: url('../../../public/user.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 1rem;
-  background-position: 80%;
+  background-position: 10%;
 }
 
 .register-icon {
@@ -107,19 +109,19 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 1rem;
-  background-position: 90%;
+  background-position: 10%;
 }
 
 .contact-icon {
   background-image: url('../../../public/contact.svg');
   background-repeat: no-repeat;
   background-size: 1rem;
-  background-position: 85%
+  background-position: 10%;
 }
 
 .about-icon {
   background-image: url('../../../public/about.svg');
   background-repeat: no-repeat;
   background-size: 1rem;
-  background-position: 90%
+  background-position: 10%;
 }
