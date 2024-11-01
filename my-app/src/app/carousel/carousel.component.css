@@ -1,7 +1,116 @@
-:root{
-  --primary-color: #006AA3;
-  --secondary-color: #93CC99;
-  --background-color: #FFFFFF;
-  --black: #000000;
-  --project-font-family: 'Montserrat', sans-serif;
+h1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.div1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2rem;
+}
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+}
+
+.img-style {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  height: 20rem;
+}
+@media (max-whidth: 10) {
+  .img-style {
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+}
+
+.tab-title{
+  color: #4f8b2e;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: -1.5rem;
+}
+
+.componente-tutorial{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#conteudo-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center 60%;
+}
+
+#produto-left {
+  width: 50%;
+}
+
+.titles {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.texts-produto{
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  margin-right: 4rem;
+  align-self: center;
+}
+
+.titles-parte{
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+#tutorial{
+  width: 14rem;
+  background-color: #186B8C;
+  height: 20rem;
+  border-radius: 4rem;
+  align-self: center;
+  border: 2px solid black
+}
+
+.txt-tutorial-div{
+  width: 60%;
+  color: black
+}
+
+.tutorial-txt{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tutorial-number{
+  color: black;
+  align-self: center;
+  padding-left: 1.2rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tutorial-number-dev{
+  align-self: center;
+  font-weight: 900;
+  font-size: 26px;
+}
+

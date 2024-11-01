@@ -1,0 +1,117 @@
+* { margin: 0; padding: 0; }
+
+:root{
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
+
+.container-img {
+  position: relative;
+  text-align: center;
+  color: var(--background-color);
+}
+
+.top-right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-txt-title{
+  font-size: 6rem;
+  color: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+#img-txt-tag{
+  font-size: 3rem;
+  color: var(--background-color);
+  font-weight: 500;
+  margin-top: -1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#text-img{
+  width:28rem;
+  height: 8rem;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+  text-align: justify;
+}
+
+#main-pic {
+  height: 30rem;
+  width: 100%;
+}
+
+#main-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 12rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border-radius: 4rem;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+#img-button{
+  width: 3rem;
+}
+
+#button-text{
+  font-weight: 500;
+  font-size: 1rem;
+
+}
+
+#buttons-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-size-adjust: auto;
+}
+
+
+.button-intro{
+  height: 2rem;
+  background-color: var(--secondary-color);
+  width: 11rem;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.img-intro {
+  background-image: url('../../../public/main-pic.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  height: 20rem;
+}
+
+.img-logo {
+  background-image: url('../../../public/sitec-logo-no-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 5%;
+  background-size: 1.8rem;
+}
+
