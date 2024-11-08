@@ -1,0 +1,64 @@
+:root{
+    --primary-color: #006AA3;
+    --secondary-color: #93CC99;
+    --background-color: #FFFFFF;
+    --black: #000000;
+    --project-font-family: 'Montserrat', sans-serif;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.logos-slide img {
+  height: 4rem;
+}
+
+.logos {
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 4.5rem 0;
+}
+
+.logos-slide img {
+  height: 4rem;
+  margin: 0 3rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos-slide {
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.text {
+  font-family: var(--project-font-family);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
