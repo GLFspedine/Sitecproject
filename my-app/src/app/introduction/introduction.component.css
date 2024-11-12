@@ -26,7 +26,7 @@
 #img-txt-title{
   font-size: 6rem;
   color: var(--background-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--project-font-family);
   font-weight: 900;
 }
 
@@ -35,15 +35,15 @@
   color: var(--background-color);
   font-weight: 500;
   margin-top: -1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--project-font-family);
 }
 
-#text-img{
+#text-imge{
   width:28rem;
   height: 8rem;
   justify-content: center;
   display: flex;
-  font-size: 18px;
+  font-size: 1.3rem;
   text-align: justify;
 }
 
@@ -62,7 +62,7 @@
   background-color: var(--secondary-color);
   border-radius: 4rem;
   align-items: center;
-  margin-top: -1rem;
+  margin-top: 1rem;
 }
 
 #img-button{
@@ -71,8 +71,9 @@
 
 #button-text{
   font-weight: 500;
-  font-size: 1rem;
-
+  font-size: 1.2rem;
+  font-family: var(--project-font-family);
+  
 }
 
 #buttons-intro{
@@ -89,6 +90,7 @@
   width: 11rem;
   color: var(--primary-color);
   margin-right: 1rem;
+  margin-top: 1rem;
   border-radius: 1rem;
   text-align: center;
   font-size: 3rem;
@@ -97,7 +99,7 @@
 }
 
 .img-intro {
-  background-image: url('../../../public/main-pic.jpg');
+  background-image: url('./../../../public/main-pic.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
@@ -108,7 +110,7 @@
 }
 
 .img-logo {
-  background-image: url('../../../public/sitec-logo-no-bg.png');
+  background-image: url('./../../../public/sitec-logo-no-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 5%;

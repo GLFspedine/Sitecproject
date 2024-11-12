@@ -2,9 +2,6 @@
     "folders": [
         {
             "path": "my-app/src/app"
-        },
-        {
-            "path": "."
         }
     ]
 }
