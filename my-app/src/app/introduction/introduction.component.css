@@ -73,7 +73,7 @@
   font-weight: 500;
   font-size: 1.2rem;
   font-family: var(--project-font-family);
-  
+
 }
 
 #buttons-intro{
@@ -99,7 +99,7 @@
 }
 
 .img-intro {
-  background-image: url('./../../../public/main-pic.jpg');
+  background-image: url('/main-pic.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
@@ -110,7 +110,7 @@
 }
 
 .img-logo {
-  background-image: url('./../../../public/sitec-logo-no-bg.png');
+  background-image: url('/sitec-logo-no-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 5%;

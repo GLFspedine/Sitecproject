@@ -99,7 +99,7 @@
   }
 
 .user-icon {
-  background-image: url('../../../public/user.svg');
+  background-image: url('/user.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 1rem;
@@ -107,7 +107,7 @@
 }
 
 .register-icon {
-  background-image: url('../../../public/register.svg');
+  background-image: url('/register.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 1rem;
@@ -115,14 +115,14 @@
 }
 
 .contact-icon {
-  background-image: url('../../../public/contact.svg');
+  background-image: url('/contact.svg');
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: 10%;
 }
 
 .about-icon {
-  background-image: url('../../../public/about.svg');
+  background-image: url('/about.svg');
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: 10%;
