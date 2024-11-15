@@ -1,10 +1,10 @@
-:root{
-    --primary-color: #006AA3;
-    --secondary-color: #93CC99;
-    --background-color: #FFFFFF;
-    --black: #000000;
-    --project-font-family: 'Montserrat', sans-serif;
-  }
+:root {
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
 
 * {
   margin: 0;
@@ -38,6 +38,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -60,5 +61,3 @@
   text-align: center;
   margin-top: 2rem;
 }
-
-

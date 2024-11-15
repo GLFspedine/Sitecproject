@@ -1,102 +1,105 @@
-* { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-:root{
-    --primary-color: #006AA3;
-    --secondary-color: #93CC99;
-    --background-color: #FFFFFF;
-    --black: #000000;
-    --project-font-family: 'Montserrat', sans-serif;
-  }
+:root {
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
 
-  /* #header-div define as propriedades do header */
+/* #header-div define as propriedades do header */
 
-  #header-div {
-    background-color: var(--primary-color);
-    height: 7rem;
-    border-radius: 0 0 2.5rem 2.5rem;
-    box-shadow: 0px 5px 5px 0px var(--black);
-    position: relative;
-    z-index: 5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+#header-div {
+  background-color: var(--primary-color);
+  height: 7rem;
+  border-radius: 0 0 2.5rem 2.5rem;
+  box-shadow: 0px 5px 5px 0px var(--black);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  /* #main-logo define o tamanho do logo */
+/* #main-logo define o tamanho do logo */
 
-  #main-logo{
-    width: 7rem;
-    margin-left: 2rem
-  }
+#main-logo {
+  width: 7rem;
+  margin-left: 2rem
+}
 
-  /* #sitec-div define o espacamento entre o logo e a frase "SITEC" */
+/* #sitec-div define o espacamento entre o logo e a frase "SITEC" */
 
-  #sitec-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 6.5rem;
-    margin-top: -0,5rem;
-  }
+#sitec-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.5rem;
+  margin-top: -0, 5rem;
+}
 
-  /* #sitec-tag-header define parametros para a frase " SITEC " */
+/* #sitec-tag-header define parametros para a frase " SITEC " */
 
-  #sitec-header{
-    font-size: 2.5rem;
-    color: var(--background-color);
-    margin-top: -0.2rem;
-    font-weight: 900;
-  }
+#sitec-header {
+  font-size: 2.5rem;
+  color: var(--background-color);
+  margin-top: -0.2rem;
+  font-weight: 900;
+}
 
-  /* #sitec-tag-header define parametros para a frase " O futuro é agora!" */
+/* #sitec-tag-header define parametros para a frase " O futuro é agora!" */
 
-  #sitec-tag-header{
-    color: var(--background-color);
-    font-size: 1.5rem;
-    margin-top: -2rem;
-  }
+#sitec-tag-header {
+  color: var(--background-color);
+  font-size: 1.5rem;
+  margin-top: -2rem;
+}
 
-  /* #sitec-tag-header define parametros dos botoes do header */
+/* #sitec-tag-header define parametros dos botoes do header */
 
-  #buttons-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-size-adjust: auto;
-  }
+#buttons-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-size-adjust: auto;
+}
 
 
-  .button-header{
-    height: 1.4rem;
-    background-color: var(--background-color);
-    width: 7rem;
-    color: var(--black);
-    margin-right: 5rem;
-    border-radius: 2rem;
-    text-align: center;
-    font-size: 0.8rem;
-    cursor: pointer;
-    text-decoration: none;
-  }
+.button-header {
+  height: 1.4rem;
+  background-color: var(--background-color);
+  width: 7rem;
+  color: var(--black);
+  margin-right: 5rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-  #sobre-nos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#sobre-nos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-  }
+}
 
-  #search-div{
-    width: 14.5rem;
-    background-color: var(--background-color);
-    height: 1.5rem;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: end;
-    padding: 0.2rem;
-    border-radius: 2rem;
-  }
+#search-div {
+  width: 14.5rem;
+  background-color: var(--background-color);
+  height: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  padding: 0.2rem;
+  border-radius: 2rem;
+}
 
 .user-icon {
   background-image: url('/user.svg');

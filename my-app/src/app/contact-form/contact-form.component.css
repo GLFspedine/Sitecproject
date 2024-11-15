@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #006AA3;
+  --secondary-color: #93CC99;
+  --background-color: #FFFFFF;
+  --black: #000000;
+  --project-font-family: 'Montserrat', sans-serif;
+}
+
+#div-contato {
+  width: 38rem;
+  height: 38rem;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  display: flex;
+}
+
+#contato-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.9rem
+}
+
+#form-contato {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#txt-contato {
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 1rem
+}
+
+#div-txt-contato {
+  margin-left: -1.3rem
+}
+
+.tab-title {
+  color: var(--secondary-color);
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: -1.5rem;
+}
+
+.contato-class {
+  width: 60%;
+  align-self: center;
+  height: 2rem;
+  border-radius: 4rem;
+  border: none;
+}
+
+textarea {
+  height: 9rem;
+  width: 60%;
+  align-self: center;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+}
+
+#button-contato {
+  width: 18rem;
+  align-self: center;
+  height: 3rem;
+  border-radius: 4rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+
+}
