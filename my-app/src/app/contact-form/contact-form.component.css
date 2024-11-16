@@ -12,11 +12,12 @@
 }
 
 #div-contato {
-  width: 38rem;
-  height: 38rem;
+  width: 35rem;
+  height: 35rem;
   background-color: var(--primary-color);
   border-radius: 2rem;
   display: flex;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #contato-div {
@@ -25,6 +26,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1.9rem
+  
 }
 
 #form-contato {
@@ -33,12 +35,15 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
+  
 }
 
 #txt-contato {
   font-weight: bold;
-  font-size: 28px;
-  margin-left: 1rem
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--project-font-family);
 }
 
 #div-txt-contato {
@@ -48,18 +53,24 @@
 .tab-title {
   color: var(--secondary-color);
   font-weight: 800;
-  font-size: 40px;
+  font-size: 3rem;
+  font-family: var(--project-font-family);
   text-align: center;
   align-items: center;
-  margin-bottom: -1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  
+  
 }
 
 .contato-class {
   width: 60%;
   align-self: center;
   height: 2rem;
-  border-radius: 4rem;
+  border-radius: 1.5rem;
   border: none;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  
 }
 
 textarea {
@@ -69,6 +80,7 @@ textarea {
   border-radius: 1rem;
   border: none;
   outline: none;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #button-contato {
@@ -79,5 +91,6 @@ textarea {
   border: none;
   background-color: var(--secondary-color);
   color: var(--background-color);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
 }
