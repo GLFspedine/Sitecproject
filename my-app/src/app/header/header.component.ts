@@ -14,8 +14,14 @@ export class HeaderComponent {
 [x: string]: any;
 
 sobre: any;
-  openForm() {
-    const formElement = document.getElementById('myForm');
+  openLogin() {
+    const formElement = document.getElementById('login');
+    if (formElement) {
+      formElement.style.display = 'block';
+    }
+  }
+  openCadastrar() {
+    const formElement = document.getElementById('cadastrar');
     if (formElement) {
       formElement.style.display = 'block';
     }

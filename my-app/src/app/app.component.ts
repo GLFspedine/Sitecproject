@@ -11,13 +11,14 @@ import { CertificatesComponent } from "./certificates/certificates.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { LoginComponent } from "./login/login.component";
+import { SelectTypeComponent } from "./select-type/select-type.component";
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavBarComponent, CarouselComponent, IntroductionComponent, InfiniteCarouselComponent, AboutUsComponent, InfiniteCrouselParceirosComponent, CertificatesComponent, FooterComponent, ContactFormComponent, LoginComponent],
+  imports: [RouterOutlet, HeaderComponent, NavBarComponent, CarouselComponent, IntroductionComponent, InfiniteCarouselComponent, AboutUsComponent, InfiniteCrouselParceirosComponent, CertificatesComponent, FooterComponent, ContactFormComponent, LoginComponent, SelectTypeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

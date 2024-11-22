@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   closeForm() {
-    const formElement = document.getElementById('myForm');
+    const formElement = document.getElementById('login');
     if (formElement) {
       formElement.style.display = 'none';
     }

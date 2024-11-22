@@ -22,16 +22,19 @@
   z-index: 9;
   border-radius: 2rem;
   margin-bottom: 2rem;
-  margin-right: 7.5rem;
+  margin-right: 21rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 20rem;
+  width: 30rem;
+  height: 35rem; ;
   padding: 10px;
   background-color: var(--background-color);
   border-radius: 1.5rem;
+
 
 }
 
@@ -61,7 +64,6 @@
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Add a azul background color to the cancel button */
@@ -75,13 +77,29 @@
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.user-icon {
+.register-icon {
   width:2.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 .icon-close{
   width:1.5rem;
-  margin-left: 7.3rem;
-  margin-bottom: 1.5rem;
+  margin-left: 27rem;
+  margin-top: -6.5rem;
+}
+
+text {
+  font-size: 5rem;
+  font-style: bold;
+  font-family: var(--project-font-family);
+}
+
+.img {
+  width: 25rem;
+  height: 10rem;
+  border-radius: 2rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
