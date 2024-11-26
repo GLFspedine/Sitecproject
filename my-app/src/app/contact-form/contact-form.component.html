@@ -6,12 +6,12 @@
                 <p id="txt-contato">FORMULÁRIO DE CONTATO</p>
             </div>
             <div id="div-contato">
-                <form id="form-contato" (formGroup)="contact_forme">
+                <form id="form_contato">
                     <input class="contato-class" type="text" placeholder="   Digite seu nome aqui*" required>
-                    <input class="contato-class" type="text" placeholder="   Digite seu E-mail aqui*" required>
+                    <input class="contato-class" type="email" placeholder="   Digite seu E-mail aqui*" required>
                     <input class="contato-class" type="text" placeholder="   Digite o tema do assunto*" required>
                     <textarea cols="30" rows="10" formControlName="descricao" placeholder="   Digite sua mensagem aqui*" required></textarea>
-                    <button type="button" id="button-contato">Enviar mensagem</button>
+                    <button type="submit" id="button-contato">Enviar mensagem</button>
                 </form>
             </div>
         </div>
