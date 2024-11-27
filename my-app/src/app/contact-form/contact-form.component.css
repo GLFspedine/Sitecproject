@@ -107,3 +107,9 @@ label {
   text-align: center;
   width: 100%; /* Garante alinhamento e consistência com inputs */
 }
+.validation-error {
+  color: orange;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
