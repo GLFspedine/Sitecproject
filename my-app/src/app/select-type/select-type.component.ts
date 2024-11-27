@@ -8,10 +8,22 @@ import { Component } from '@angular/core';
   styleUrl: './select-type.component.css'
 })
 export class SelectTypeComponent {
-closeForm() {
-    const formElement = document.getElementById('cadastrar');
-    if (formElement) {
-      formElement.style.display = 'none';
-    }
+
+  handleButtonClick() {
+    this.closeForm();
+    this.openRegisterCli();
+  }
+  openRegisterCli() {
+  const formElement01 = document.getElementById('register-cli');
+      if (formElement01) {
+        formElement01.style.display = 'block';
   }
 }
+    closeForm() {
+      const formElement = document.getElementById('cadastrar');
+      if (formElement) {
+        formElement.style.display = 'none';
+      }
+    }
+  }
+

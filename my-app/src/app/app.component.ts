@@ -1,24 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./header/header.component";
-import { NavBarComponent } from "./nav-bar/nav-bar.component";
-import { CarouselComponent } from "./carousel/carousel.component";
-import { IntroductionComponent } from "./introduction/introduction.component";
-import { InfiniteCarouselComponent } from "./infinite-carousel/infinite-carousel.component";
-import { AboutUsComponent } from "./about-us/about-us.component";
-import { InfiniteCrouselParceirosComponent } from "./infinite-crousel-parceiros/infinite-crousel-parceiros.component";
-import { CertificatesComponent } from "./certificates/certificates.component";
 import { FooterComponent } from "./footer/footer.component";
-import { ContactFormComponent } from "./contact-form/contact-form.component";
+import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
 import { SelectTypeComponent } from "./select-type/select-type.component";
+import { RegisterCliComponent } from "./register-cli/register-cli.component";
+import { RegisterSupplierComponent } from "./register-supplier/register-supplier.component";
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavBarComponent, CarouselComponent, IntroductionComponent, InfiniteCarouselComponent, AboutUsComponent, InfiniteCrouselParceirosComponent, CertificatesComponent, FooterComponent, ContactFormComponent, LoginComponent, SelectTypeComponent],
+  imports: [RouterOutlet, FooterComponent, HomeComponent, LoginComponent, SelectTypeComponent, RegisterCliComponent, RegisterSupplierComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

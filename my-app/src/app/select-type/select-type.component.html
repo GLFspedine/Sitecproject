@@ -2,12 +2,10 @@
   <form  class="form-container">
     <h2><img class="register-icon text" src="/register.svg">Selecione Sua Categoria: <a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" (click)="closeForm()"></a></h2>
     <div>
-      <button type="submit" class="btn">Empresa em Busca de Certificação</button>
-      <img class="img" src="/search.svg">
+      <button type="submit" class="btn" (click)="handleButtonClick()"><img class="img" src="/search.svg">Empresa em Busca de Certificação</button>
     </div>
     <div>
-      <button  class="btn cancel" >Empresa Fornecedora de Serviços de Reciclagem</button>
-      <img class="img" src="/emp-forn.jfif" alt="">
+      <button  class="btn cancel" ><img class="img" src="/industry.svg">Empresa Fornecedora de Serviços de Reciclagem</button>
     </div>
   </form>
 </div>
