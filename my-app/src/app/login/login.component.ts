@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +8,12 @@ import { RouterModule } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+  constructor( private activatedRoute: ActivatedRoute ) {}
+  ngOnInit() {
+  const par =
+  this.activatedRoute.snapshot.paramMap.get('login.component.html')
+  }
   closeForm() {
     const formElement = document.getElementById('login');
     if (formElement) {

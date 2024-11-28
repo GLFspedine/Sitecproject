@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from "./footer/footer.component";
-import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
 import { SelectTypeComponent } from "./select-type/select-type.component";
-import { RegisterCliComponent } from "./register-cli/register-cli.component";
 import { RegisterSupplierComponent } from "./register-supplier/register-supplier.component";
+import { RegisterCliComponent } from "./register-cli/register-cli.component";
+
+
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, HomeComponent, LoginComponent, SelectTypeComponent, RegisterCliComponent, RegisterSupplierComponent],
+  imports: [RouterOutlet, RouterOutlet, LoginComponent, SelectTypeComponent, RegisterSupplierComponent, RegisterCliComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

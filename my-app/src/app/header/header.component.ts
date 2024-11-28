@@ -3,8 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
 
-
-
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -29,7 +27,7 @@ sobre: any;
     }
   }
   openCadastrar() {
-    const formElement = document.getElementById('register-for');
+    const formElement = document.getElementById('cadastrar');
     if (formElement) {
       formElement.style.display = 'block';
     }
