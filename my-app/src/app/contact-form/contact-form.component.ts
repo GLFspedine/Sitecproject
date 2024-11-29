@@ -17,16 +17,24 @@ import { CommonModule } from '@angular/common';
               <form id="form_contato" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <label for="nome">Nome:&nbsp;</label>
                 <input class="contato-class" type="text" name="nome" placeholder="   Digite seu nome aqui*" formControlName="nome" required>
-                <div *ngIf="contactForm.get('nome')?.invalid && contactForm.get('nome')?.touched" class="validation-error">Campo obrigatorio!</div>
+                <div *ngIf="contactForm.get('nome')?.invalid && contactForm.get('nome')?.touched" class="validation-error">
+                  <small>Campo obrigatorio!</small>
+                </div>
                 <label for="email">E-mail:&nbsp;</label>
                 <input class="contato-class" type="email" name="email" placeholder="   Digite seu E-mail aqui*" formControlName="email" required>
-                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="validation-error">Campo obrigatorio!</div>
+                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="validation-error">
+                  <small>Campo obrigatorio!</small>
+                </div>
                 <label for="assunto">Assunto:&nbsp;</label>
                 <input class="contato-class" type="text" name="assunto" placeholder="   Digite o tema do assunto*"  formControlName="assunto" required>
-                <div *ngIf="contactForm.get('assunto')?.invalid && contactForm.get('assunto')?.touched" class="validation-error">Campo obrigatorio!</div>
+                <div *ngIf="contactForm.get('assunto')?.invalid && contactForm.get('assunto')?.touched" class="validation-error">
+                  <small>Campo obrigatorio!</small>
+                </div>
                 <label for="descricao">Mensagem:&nbsp;</label>
                 <textarea name="descricao" cols="30" rows="10" formControlName="descricao" placeholder="   Digite sua mensagem aqui*" formControlName="descricao" required></textarea>
-                <div *ngIf="contactForm.get('descricao')?.invalid && contactForm.get('descricao')?.touched" class="validation-error">Campo obrigatorio!</div>
+                <div *ngIf="contactForm.get('descricao')?.invalid && contactForm.get('descricao')?.touched" class="validation-error">
+                  <small>Campo obrigatorio!</small>
+                </div>
                 <button type="submit" id="button-contato">Enviar formulário</button>
               </form>
           </div>
@@ -46,7 +54,7 @@ export class ContactFormComponent {
   }
   onSubmit() {
     if (this.contactForm.invalid) {
-      return;
+      return this.contactForm.markAllAsTouched();
     }
     console.log(`Fomrulario enviado com sucesso!`)
   }
