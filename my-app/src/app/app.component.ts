@@ -4,6 +4,8 @@ import { LoginComponent } from "./login/login.component";
 import { SelectTypeComponent } from "./select-type/select-type.component";
 import { RegisterSupplierComponent } from "./register-supplier/register-supplier.component";
 import { RegisterCliComponent } from "./register-cli/register-cli.component";
+import { FooterComponent } from "./footer/footer.component";
+import { HomeComponent } from "./home/home.component";
 
 
 
@@ -12,7 +14,7 @@ import { RegisterCliComponent } from "./register-cli/register-cli.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterOutlet, LoginComponent, SelectTypeComponent, RegisterSupplierComponent, RegisterCliComponent],
+  imports: [RouterOutlet, RouterOutlet, LoginComponent, SelectTypeComponent, RegisterSupplierComponent, RegisterCliComponent, FooterComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

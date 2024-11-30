@@ -36,12 +36,10 @@ export class SelectTypeComponent implements OnInit {
         formElement.style.display = 'none';
       }
     }
-
-
   openRegisterSupplier() {
-    const formElement02 = document.getElementById('register-supplier');
-        if (formElement02) {
-          formElement02.style.display = 'block';
+    const formElement01 = document.getElementById('register-supplier');
+        if (formElement01) {
+          formElement01.style.display = 'block';
     }
   }
 }

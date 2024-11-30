@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [RouterModule, CommonModule, ReactiveFormsModule],
   styleUrl: './login.component.css',
-  template: `<div routerLink="/login" class="form-popup" id="login">
+  template: `<div class="form-popup" id="login">
   <form  class="form-container">
     <h1><img class="user-icon" src="/user.svg">Login <a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" (click)="closeForm()"></a></h1>
 
@@ -16,8 +18,8 @@ import { RouterModule } from '@angular/router';
     <label for="psw"><b>Password:</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="btn">Login</button>
-    <button  class="btn cancel" >Cadastrar</button>
+    <button type="submit" class="btn" (click)="closeForm()">Login</button>
+    <button  class="btn cancel" (click)="closeForm()" >Cadastrar</button>
   </form>
 </div>`
 })

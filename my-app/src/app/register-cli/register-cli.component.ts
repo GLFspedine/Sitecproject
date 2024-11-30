@@ -15,7 +15,7 @@ export class RegisterCliComponent implements OnInit {
     this.activatedRoute.snapshot.paramMap.get('register-cli.component.html')
     }
     closeForm() {
-      const formElement = document.getElementById('login');
+      const formElement = document.getElementById('register-cli');
       if (formElement) {
         formElement.style.display = 'none';
       }

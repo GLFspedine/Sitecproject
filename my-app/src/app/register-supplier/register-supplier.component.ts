@@ -15,7 +15,7 @@ export class RegisterSupplierComponent implements OnInit {
     this.activatedRoute.snapshot.paramMap.get('register-supplier.component.html')
       }
         closeForm() {
-    const formElement = document.getElementById('login');
+    const formElement = document.getElementById('register-supplier');
     if (formElement) {
       formElement.style.display = 'none';
     }
