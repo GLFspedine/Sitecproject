@@ -9,7 +9,7 @@ import { FormGroup, Validators, FormBuilder, ReactiveFormsModule } from '@angula
   styleUrl: './register-supplier.component.css',
   template: `
 <div class="form-popup" id="register-for">
-  <form  class="form-container" [formGroup]="registerSupplier"] (ngSubmit)="onSubmit()">
+  <form  class="form-container" [formGroup]="registerSupplier" (ngSubmit)="onSubmit()">
     <h1><img class="user-icon" src="/register.svg">Cadastrar <a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" ></a></h1>
     <div>
       <label for="empresa"><b>Nome da Empresa:&nbsp;</b></label>
@@ -30,7 +30,7 @@ import { FormGroup, Validators, FormBuilder, ReactiveFormsModule } from '@angula
         <small>Campo obrigatório!</small>
       </div>
       <label for="especialidade"><b>Especialidade:&nbsp;</b></label>
-      <input type="text" placeholder="Descreva sua esoecialidade" name="especialidade" formControlName="atividade" required>
+      <input type="text" placeholder="Descreva sua esoecialidade" name="especialidade" formControlName="especialidade" required>
       <div class="validation-error" *ngIf="registerSupplier.get('atividade')?.invalid && registerSupplier.get('atividade')?.touched">
         <small>Campo obrigatório!</small>
       </div>
