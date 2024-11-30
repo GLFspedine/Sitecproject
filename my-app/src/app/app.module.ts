@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [],
   imports: [
     BrowserModule,
-    ReactiveFormsModule // Importando o módulo
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: []

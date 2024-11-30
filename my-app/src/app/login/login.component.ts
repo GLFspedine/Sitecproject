@@ -1,33 +1,47 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterModule, CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   styleUrl: './login.component.css',
-  template: `<div class="form-popup" id="login">
-  <form  class="form-container">
+  template: `<div routerLink="/login" class="form-popup" id="login">
+  <form  class="form-container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <h1><img class="user-icon" src="/user.svg">Login <a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" (click)="closeForm()"></a></h1>
-
-    <label for="email"><b>Email:</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password:</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn" (click)="closeForm()">Login</button>
-    <button  class="btn cancel" (click)="closeForm()" >Cadastrar</button>
+    <label for="email"><b>Email:&nbsp;</b></label>
+    <input type="text" placeholder="Digite seu e-mail aqui*" name="email" formControlName="email" required>
+    <div class="validation-error" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+      <small>Campo obrigatorio!</small>
+    </div>
+    <label for="psw"><b>Password:&nbsp;</b></label>
+    <input type="password" placeholder="Digite sua senha aqui*" name="psw" formControlName="password" required>
+    <div class="validation-error" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+      <small>Campo obrigatorio!</small>
+    </div>
+    <button type="submit" class="btn">Login</button>
+    <button  class="btn cancel" >Cadastrar</button>
   </form>
 </div>`
 })
-export class LoginComponent implements OnInit {
-  constructor( private activatedRoute: ActivatedRoute ) {}
-  ngOnInit() {
-  const par =
-  this.activatedRoute.snapshot.paramMap.get('login.component.html')
+export class LoginComponent {
+  loginForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.loginForm = this.fb.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
+
+  onSubmit() {
+    if (this.loginForm.invalid) {
+      return this.loginForm.markAllAsTouched();
+    }
+    console.log(`Fomrulario enviado com sucesso!`);
+    this.closeForm();
   }
   closeForm() {
     const formElement = document.getElementById('login');
@@ -36,5 +50,3 @@ export class LoginComponent implements OnInit {
     }
   }
 }
-
-
