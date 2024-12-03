@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
       <small>Campo obrigatorio!</small>
     </div>
     <button type="submit" class="btn">Login</button>
-    <button  class="btn cancel" >Cadastrar</button>
+    <button  class="btn cancel" (click)="handleButtonClick()" >Cadastrar</button>
   </form>
 </div>`
 })
@@ -43,10 +43,22 @@ export class LoginComponent {
     console.log(`Fomrulario enviado com sucesso!`);
     this.closeForm();
   }
+
+  handleButtonClick() {
+    this.closeForm();
+    this.openCadastrar();
+  }
   closeForm() {
     const formElement = document.getElementById('login');
     if (formElement) {
       formElement.style.display = 'none';
+    }
+  }
+
+  openCadastrar() {
+    const formElement = document.getElementById('cadastrar');
+    if (formElement) {
+      formElement.style.display = 'block';
     }
   }
 }

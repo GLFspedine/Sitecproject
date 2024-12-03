@@ -7,10 +7,9 @@ import { FormGroup, Validators, FormBuilder, ReactiveFormsModule } from '@angula
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   styleUrl: './register-supplier.component.css',
-  template: `
-<div class="form-popup" id="register-for">
+  template: `<div class="form-popup" id="register-for">
   <form  class="form-container" [formGroup]="registerSupplier" (ngSubmit)="onSubmit()">
-    <h1><img class="user-icon" src="/register.svg">Cadastrar <a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" ></a></h1>
+    <h1><img class="user-icon" src="/register.svg">Cadastrar Fornecedor<a ><img class="icon-close" src="/circle-close-multiple-svgrepo-com.svg" (click)="closeForm()" ></a></h1>
     <div>
       <label for="empresa"><b>Nome da Empresa:&nbsp;</b></label>
       <input type="text" placeholder="Nome da Empresa" name="empresa" formControlName="empresa" required>
@@ -64,5 +63,11 @@ export class RegisterSupplierComponent {
       return this.registerSupplier.markAllAsTouched();
     }
     console.log(`Cliente Fornecedor cadastrado com sucesso!`);
+  }
+  closeForm() {
+    const formElement = document.getElementById('register-for');
+    if (formElement) {
+      formElement.style.display = 'none';
+    }
   }
 }

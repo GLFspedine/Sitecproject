@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SlickCarouselModule } from 'ngx-slick-carousel'; 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-introduction',
@@ -10,5 +10,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   styleUrl: './introduction.component.css'
 })
 export class IntroductionComponent {
-
+  openCadastrar() {
+    const formElement = document.getElementById('cadastrar');
+    if (formElement) {
+      formElement.style.display = 'block';
+    }
+  }
 }

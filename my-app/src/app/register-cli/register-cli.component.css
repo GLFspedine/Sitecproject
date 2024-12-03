@@ -21,7 +21,7 @@
   border: 3px solid var(--background-color);
   z-index: 9;
   border-radius: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-right: 7.5rem;
 
 }
@@ -29,7 +29,8 @@
 /* Add styles to the form container */
 .form-container {
   width: 35rem; ;
-  height: 32rem;
+  height: auto;
+  min-height: 31rem;
   padding: 10px;
   background-color: var(--background-color);
   border-radius: 1.5rem;
@@ -41,7 +42,7 @@
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
   padding: 0.5rem;
-  margin: 0.2rem 0 0.2rem 0;
+  margin: 0.1rem 0 0.1rem 0;
   border: none;
   border-radius: 0.5rem;
   background: rgb(226, 222, 222);
@@ -86,7 +87,7 @@
 
 .icon-close{
   width:1.5rem;
-  margin-left: 17rem;
+  margin-left: 9rem;
   margin-bottom: 1.5rem;
 }
 
