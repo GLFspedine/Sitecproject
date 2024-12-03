@@ -2,7 +2,6 @@ Aqui está o projeto SITEC no 2º Semestre
 Vídeo pitch - https://www.youtube.com/watch?v=8YZvzbnLc0I  
 Documentação em PDF - [SITEC - Template.pdf](https://github.com/user-attachments/files/18000257/SITEC.-.Template.pdf)    
 Porwer Point - [SITEC.pptx](https://github.com/user-attachments/files/18000031/SITEC.pptx)  
-Arquivo.zip do projeto -
 Script do Banco de Dados:  
 [UplUSE SQL_SITEC
 CREATE TABLE ESPECIALIDADE ( 
